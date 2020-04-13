@@ -75,38 +75,74 @@ for (age = "0"; age < 10; age++) {
 
 document.write("you are now over 10");*/
 
+/////////////////////////////////////////////////////////////////////////////////
+
+//alert('Hello Kicsi Én!');
+
+/*document.write("My name is PÉTER!");
 
 
+function kiir() {
+  document.write("A függvény")
+};
 
+
+$('body').append(
+  '<h1>Ezt írd ki!</h1>'
+);
+
+$( ".inner" ).append( "<p>Test</p>" );
+
+function kiir () {
+  document.getElementById("demo1").innerHTML = "nem csak a html -be beágyazva működik";
+};*/
+
+/////////////////////////////////////////////
+/*
 for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+for (let i = 0; i < 10; i = i + 2) {
+  console.log(i);
+}
+
+let printNumbers = (n) => {
+  for (let i = 0; i < n; i++) {
     console.log(i);
   }
-  
-  for (let i = 0; i < 10; i = i + 2) {
-    console.log(i);
-  }
-  
-  let printNumbers = (n) => {
-    for (let i = 0; i < n; i++) {
-      console.log(i);
-    }
-  }
-  
-  let greet = (name) => {
-    return "Hello, " + name;
-  }
-  
-  let printValues = (array) => {
-    for(let i = 0; i < array.length; i++) {
-      console.log(array[i]);
-    }
-  }
-  
-  let printValues2 = (array) => {
-    array.forEach(value => {
-      console.log(value);
-    });
-  }
+}
 
+let greet = (name) => {
+  return "Hello, " + name;
+}
 
+let printValues = (array) => {
+  for(let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+}
+
+let printValues2 = (array) => {
+  array.forEach(value => {
+    console.log(value);
+  });
+}*/
+///////////////////////////////////////////
+
+$("button").on('click', (event) => {
+  console.log("Yeah, you clicked me");
+});
+
+$("#second").click(() => {
+  $("#first").text("Second one was clicked.");
+});
+
+$("#prettify").click(() => {
+  $("button").css("background", "purple");
+  $("button").css("color", "white");
+  $("button").css("font-size", "20px");
+  $("button").css("border", "0");
+  $("button").css("border-radius", "5px");
+});
 
